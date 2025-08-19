@@ -1,0 +1,100 @@
+/* Botón Crear */
+.acciones-servicios {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.btn-create {
+    background: linear-gradient(90deg, #5AADE8, #6CB4EE);
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.btn-create:hover {
+    background: linear-gradient(90deg, #58a0d6, #5092c0);
+    transform: translateY(-2px);
+}
+
+/* Buscador */
+.buscador-bonito {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.buscador-bonito input, .buscador-bonito select, .buscador-bonito button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.buscador-bonito button {
+    background-color: #6CB4EE;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.buscador-bonito button:hover {
+    background-color: #58a0d6;
+}
+
+/* Tabla moderna */
+.tabla-bonita table {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.tabla-bonita th, .tabla-bonita td {
+    padding: 15px;
+    text-align: center;
+}
+
+.tabla-bonita thead {
+    background-color: #5AADE8;
+    color: white;
+}
+
+.tabla-bonita tbody tr:nth-child(even) {
+    background-color: #f3f7fc;
+}
+
+.tabla-bonita tbody tr:hover {
+    background-color: #d0e6f9;
+}
+
+.tabla-bonita button {
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #6CB4EE;
+    color: #fff;
+    cursor: pointer;
+}
+
+.tabla-bonita button:hover {
+    background-color: #58a0d6;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .acciones-servicios { justify-content: center; }
+    .buscador-bonito { flex-direction: column; align-items: center; }
+    .tabla-bonita table, .tabla-bonita th, .tabla-bonita td { font-size: 0.9rem; }
+}

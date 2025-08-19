@@ -1,0 +1,65 @@
+table {
+    font-family: Arial, sans-serif;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    table-layout: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  table thead {
+    background: rgb(224, 153, 0);
+    background: linear-gradient(190deg, rgba(224, 153, 0, 1) 0%, rgba(255, 218, 0, 1) 100%);
+    color: white;
+  }
+  
+  table th,
+  table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: none;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tbody tr:hover {
+    background-color: #fff6cc;
+    cursor: pointer;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .detalle-pedido {
+      max-width: 100%;
+      padding: 15px;
+    }
+  
+    table,
+    table tbody,
+    table tr,
+    table td {
+      width: 90%;
+    }
+  
+  
+    table tbody tr {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+  
+    table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      width: 50%;
+      color: #000000;
+      text-align: left;
+    }
+  }

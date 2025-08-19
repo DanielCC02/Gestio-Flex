@@ -1,0 +1,62 @@
+# =========================
+# Backend (Django + DRF)
+# =========================
+Backend/env/
+Backend/*.sqlite3
+Backend/db.sqlite3
+Backend/__pycache__/
+Backend/*/__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.log
+*.pot
+*.py~ 
+
+# Archivos de entorno
+Backend/.env
+Backend/.env.*
+
+# Archivos de migraciones compilados
+Backend/**/migrations/__pycache__/
+Backend/**/migrations/*.pyc
+Backend/**/migrations/*.pyo
+
+# Archivos estáticos generados
+Backend/staticfiles/
+Backend/media/
+
+# =========================
+# Frontend (React en Frontend/ots)
+# =========================
+Frontend/ots/node_modules/
+Frontend/ots/build/
+Frontend/ots/.cache/
+Frontend/ots/dist/
+Frontend/ots/coverage/
+
+# Archivos de entorno
+Frontend/ots/.env
+Frontend/ots/.env.*
+!Frontend/ots/.env.example
+
+# Archivos de logs y depuración
+Frontend/ots/npm-debug.log*
+Frontend/ots/yarn-debug.log*
+Frontend/ots/yarn-error.log*
+Frontend/ots/pnpm-debug.log*
+
+# Archivos del editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# SO temporales
+.DS_Store
+Thumbs.db
+# Ignorar repositorios internos
+GestioFlex/.git

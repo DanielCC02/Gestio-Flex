@@ -1,0 +1,121 @@
+:root {
+  --brand: #6CB4EE;
+  --brand-hover: #5aa3dc;
+  --text: #333333;
+  --border: #ddd;
+  --bg: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: var(--bg);
+}
+
+.login-box-container {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.login-container {
+  width: min(350px, 92vw);
+  background-color: var(--bg);
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.login-title-text {
+  text-align: center;
+  color: var(--brand);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-title {
+  margin-bottom: 6px;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input-box input:focus {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px rgba(108, 180, 238, 0.15);
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.btnLogin {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #6CB4EE !important; /* color fijo */
+  color: #fff !important;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+}
+
+.btnLogin:hover:not(:disabled) {
+  background-color: #5AA0D9; /* hover ligeramente más oscuro */
+  transform: translateY(-1px);
+}
+
+.btnLogin:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 16px;
+  }
+  .login-title-text {
+    font-size: 1.6rem;
+  }
+}

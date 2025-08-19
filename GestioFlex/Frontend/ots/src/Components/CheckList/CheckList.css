@@ -1,0 +1,57 @@
+.checklist-table {
+    margin: 20px 0;
+    width: 90%;
+    max-width: 800px;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.checklist-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.checklist-table th,
+.checklist-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.checklist-table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+.checklist-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.checklist-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.checklist-table input[type="checkbox"] {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.checklist-table td {
+    vertical-align: middle;
+}
+
+.checklist-table tbody tr td:first-child {
+    padding-left: 15px;
+}
+
+.checklist-table tbody tr td:last-child {
+    text-align: center;
+}
+
+.no-items {
+    text-align: center;
+    color: #888;
+    padding: 15px;
+}
+

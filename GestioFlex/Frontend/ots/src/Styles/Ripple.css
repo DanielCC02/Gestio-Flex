@@ -1,0 +1,25 @@
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(
+      circle,     
+      rgba(255, 255, 255, 0) 40%,        /* Transparente en el centro */
+      rgba(0, 238, 255, 0.283),          /* Celeste claro y suave */
+      rgba(144, 238, 144, 0.2),          /* Verde claro */
+      rgba(255, 251, 0, 0.596),            /* Amarillo puro y brillante */
+      rgba(255, 255, 102, 0.2),          /* Amarillo con transparencia */
+      rgba(255, 0, 128, 0.3)           /* Magenta suave en el borde */
+    );
+    animation: ripple-animation 0.2s ease-out;
+    transform: scale(6);
+  }
+  
+  @keyframes ripple-animation {
+    to {
+      transform: scale(10);
+      opacity: 0;
+    }
+  }

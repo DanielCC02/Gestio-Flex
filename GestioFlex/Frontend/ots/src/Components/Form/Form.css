@@ -1,0 +1,45 @@
+.userFormBox button {
+    margin-left: 80px;
+}
+
+.userForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.formBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.formBox input {
+    width: 60%;
+    height: 25px;
+    padding-left: 10px;
+    background-color: #ffffff;
+    border: solid 1.4px #9e9e9e;
+    border-radius: 5px;
+    color: #000;
+}
+
+.btnUserForm {
+    margin-top: 20px;
+    width: 300px;
+}
+
+@media (max-width: 1024px) {
+
+    .userForm {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+}

@@ -1,0 +1,9 @@
+.sticky-alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  opacity: 0.9;
+  padding: 15px;
+}

@@ -1,0 +1,60 @@
+.datos {
+    display: flex;
+    flex-direction: column;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.switch-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    overflow: hidden; /* Evita que los elementos salgan del contenedor */
+    box-sizing: border-box; /* Asegura que los márgenes y el padding no expandan el contenedor */
+}
+
+.switch-input-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.quantity-input {
+    flex-shrink: 0; /* Impide que el input numérico se reduzca más de lo necesario */
+    max-width: 300px; /* Limita el ancho del input */
+    min-width: 60px; /* Establece un ancho mínimo razonable */
+    padding: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    box-sizing: border-box; /* Asegura que el padding no desborde el contenedor */
+}
+
+@media (max-width: 700px) {
+    .switch-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px; /* Añade espacio entre los elementos */
+        align-items: center;
+        padding: 20px;
+        border: 1px solid #d3d3d3;
+        border-radius: 20px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .switch-input-container {
+        flex-direction: column;
+    }
+
+    .quantity-input {
+        max-width: 100%; /* Se adapta al espacio disponible en dispositivos pequeños */
+        min-width: 60px;
+        justify-self: end;
+        height: 40px;
+    }
+}

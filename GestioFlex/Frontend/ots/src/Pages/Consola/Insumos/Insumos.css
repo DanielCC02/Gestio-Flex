@@ -1,0 +1,92 @@
+.gestion-insumos-body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #FFFFFF;
+    color: #333;
+    margin: 0;
+    padding: 2rem;
+}
+.gestion-insumos-h1 {
+    color: #6CB4EE;
+    margin-bottom: 1.5rem;
+}
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.search-box input {
+    padding: 0.6rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 220px;
+}
+.btn-create {
+    padding: 0.6rem 1rem;
+    background-color: #6CB4EE;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-create:hover {
+    background-color: #5aa3dc;
+}
+.insumos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+.insumos-table thead {
+    background-color: #A8E6CF;
+    color: #333;
+}
+.insumos-table th, .insumos-table td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.insumos-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+.actions button {
+    padding: 0.4rem 0.8rem;
+    margin-right: 0.3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+.btn-view {
+    background-color: #6CB4EE;
+    color: #fff;
+}
+.btn-edit {
+    background-color: #A8E6CF;
+    color: #333;
+}
+.pagination {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+}
+.pagination button {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.pagination button.active {
+    background-color: #6CB4EE;
+    color: white;
+    border: none;
+}
+
+
+
+.gestion-insumos-body table thead th {
+  text-align: center;
+  vertical-align: middle; /* opcional, centra también verticalmente */
+}
